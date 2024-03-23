@@ -4,8 +4,8 @@
 import inquirer from 'inquirer';
 
 let answers = await inquirer.prompt([
-    {name: 'first_number', type: 'number', message: 'Enter first number: '}, 
-    {name: 'second_number', type: 'number', message: 'Enter second number: '},
+    {name: 'first_number', type: 'number', message: 'Enter your first number: '}, 
+    {name: 'second_number', type: 'number', message: 'Enter your second number: '},
     {
         name: 'operator',
         type: 'list',
@@ -25,3 +25,5 @@ else if(answers.operator === 'multiplication')
 else if(answers.operator === 'division')
 {console.log(answers.first_number / answers.second_number);}
 else{console.log('please select valid operator');}
+
+console.log("THE END");
